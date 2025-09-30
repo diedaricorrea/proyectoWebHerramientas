@@ -1,0 +1,455 @@
+
+/* MODO OSCURO */
+body.dark {
+    color: white;
+    background-color: #121212;
+}
+
+.dark h2{
+    color: white !important;
+}
+
+.dark p{
+    color: white !important;
+}
+
+/* ============== CSS HEADER ===================== */
+
+.dark .navbar {
+    color: white;
+    background-color: rgb(35, 35, 35) !important;
+}
+
+.--oculto{
+    display: none;
+}
+
+.dark .navbar .nav-link {
+    color: white;
+}
+
+.dark .navbar .nav-link:hover {
+    color: #ffcccb; /* Un color diferente para el hover en modo oscuro */
+}
+
+.dark .navbar .nav-link.active {
+    color: rgb(251, 66, 66); /* Un color diferente para el active en modo oscuro */
+}
+
+.dark .navbar .form-control{
+    background-color: #333;
+    outline: none;
+    border: none !important;
+}
+
+.dark .navbar .form-control:focus{
+    background-color: #333;
+    outline: none;
+    border: none !important;
+    border-bottom: 3px solid #dc3545 !important;
+}
+
+.dark .navbar .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+/* Cambiar color de las líneas del botón hamburguesa a blanco */
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dark .navbar-toggler{
+    border: 1px solid #444;
+}
+
+/* Quitar contorno del botón al hacer clic */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ============== CSS HERO SECTION ===================== */
+
+.dark .hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/contacto.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* ============== CSS CONTACTO SECTION ===================== */
+
+.dark .formularios-section {
+    background-color: #2a2a2a !important;
+    color: white;
+}
+
+.dark .card-contacto {
+    background-color: #333;
+    color: white;
+}
+
+/* ============== CSS COTIZACION SECTION ===================== */
+
+.dark .card-form{
+    background-color: #333 !important;
+    color: white;
+}
+
+.dark .card-form input::placeholder {
+    color: white;
+}
+
+.dark .card-form textarea::placeholder {
+    color: white;
+}
+
+.dark .card-form input,
+.dark .card-form textarea,
+.dark .card-form select {
+    color: white;
+}
+
+.dark .card-form input,
+.dark .card-form textarea {
+    background-color: #2a2a2a !important;
+    border: none;
+    border-bottom: 3px solid #444;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+    color: rgb(172, 172, 172);
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.dark .card-form select{
+    background-color: #2a2a2a !important;
+    border: none;
+}
+
+.dark .card-form option {
+    background-color: #2a2a2a; /* Fondo blanco de las opciones */
+    color: whitesmoke; /* Color de texto */
+    padding: 8px; /* Relleno interior de las opciones */
+}
+
+.dark .card-form select:focus{
+    background-color: #2a2a2a !important;
+    border: none;
+    border-bottom: 3px solid #444;  ;
+}
+
+/* ============== CSS FEEDBACK Y HORARIOS SECTION ===================== */
+
+.dark .div-info-adicional{
+    background-color: #333 !important;
+    color: white;
+}
+
+.dark .div-horario {
+    background-color: #2a2a2a !important;
+    color: whitesmoke;
+    border: 1px solid #444 !important;
+}
+
+.dark .feedback-form{
+    background-color: #2a2a2a !important;
+    color: white;
+}
+
+.dark .card-formFed input::placeholder {
+    color: white;
+}
+
+.dark .card-formFed textarea::placeholder {
+    color: white;
+}
+
+.dark .card-formFed input,
+.dark .card-formFed textarea,
+.dark .card-formFed select {
+    color: white;
+}
+
+.dark .div-info-adicional input,
+.dark .div-info-adicional textarea {
+    background-color: #333 !important;
+    border: none;
+    border-bottom: 3px solid #444;  ;
+}
+
+
+/* ============== CSS PREGUNTAS FRECUENTES ===================== */
+
+.dark .faq-section {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+/* Botón del acordeón cuando está colapsado */
+.dark .accordion-button.collapsed {
+    background-color: #333; /* Fondo del botón */
+    color: white; /* Color del texto */
+}
+
+/* Botón del acordeón cuando está desplegado */
+.dark .accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: rgb(255, 195, 195);
+}
+
+/* Cuerpo del acordeón cuando está desplegado */
+.dark .accordion-body {
+    background-color: #2a2a2a; /* Fondo del contenido desplegado */
+    color: #e0e0e0; /* Texto claro */
+    border-top: 1px solid #555; /* Borde en la parte superior */
+    
+}
+
+.accordion-item:focus {
+    box-shadow: none !important; 
+    border-color: transparen !important;
+}
+
+/* ============== CSS CARRUSEL ===================== */
+
+.dark .proveedores-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .slider .slide img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ============== FIN MODO DARK ===================== */
+
+
+/* ============== CSS MODO CLARO ===================== */
+/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP  */
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important; /*Esto es lo que jode de boostrap*/
+    border: 1px solid #ced4da !important;
+    border-bottom: 3px solid #dc3545  !important; 
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+/* ============== HEADER ===================== */
+
+.active {
+    border-bottom: 3px solid #dc3545 !important;
+}
+
+.navbar {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    position: fixed !important;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../img/contacto.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(3, 3, 3, 0.034);
+    filter: blur(1px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-in-out;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    animation: fadeInUp 1.5s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ============== CSS CONTACTO Y FORM SECTION ===================== */
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-contacto{
+    height: 100%;
+}
+
+.card-contacto,
+.card-form {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* ============== CSS FEEDBACK Y HORARIO ===================== */
+
+.feedback-form {
+    /* formulario de reseña */
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feedback-form:hover {
+    transform: scale(1.02);
+}
+
+.form-control {
+    /* Input y Textarea */
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #dc3545;
+    /* Cambio de borde al enfocarse */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.border {
+    /* Estilos de horarios de atención */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.border:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    /* Agrandar ligeramente al pasar el ratón */
+}
+
+/* ============== CSS FAQ ===================== */
+
+.faq-title {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-title:hover {
+    color: #050505;
+}
+
+/* ============== CSS CARRUSEL ===================== */
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    width: calc(120px * 18);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100px * 12));
+    }
+}
+
+/* FOOTER CSS */
+
+.text-reset {
+    /* Reset de color de texto */
+    text-decoration: none;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
