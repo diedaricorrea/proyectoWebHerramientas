@@ -1,0 +1,535 @@
+/* CSS MODO DARK */
+/* -----------------------------------------------------------------------------*/
+/* ============== CSS NADVAR ===================== */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Header y Nadvar */
+.dark .navbar {
+    color: white;
+    background-color: rgb(35, 35, 35);
+}
+
+.--oculto {
+    display: none;
+}
+
+.dark .navbar .nav-link {
+    color: white;
+}
+
+.dark .navbar .nav-link:hover {
+    color: #ffcccb;
+    /* Un color diferente para el hover en modo oscuro */
+}
+
+.dark .navbar .nav-link.active {
+    color: rgb(251, 66, 66);
+    /* Un color diferente para el active en modo oscuro */
+}
+
+.dark .navbar .form-control {
+    background-color: #333;
+    outline: none;
+    border: 1px solid #444;
+}
+
+.dark .navbar .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+/* Cambiar color de las líneas del botón hamburguesa a blanco */
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dark .navbar-toggler {
+    border: 1px solid #444;
+}
+
+/* Quitar contorno del botón al hacer clic */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ============== CSS HERO SECTION ===================== */
+
+.dark .hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url('../img/Nosotros.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+/* ============== CSS HISTORIA SECTION ===================== */
+
+.dark .history-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark h2 {
+    color: white !important;
+}
+
+.dark p {
+    color: white !important;
+}
+
+/* ============== CSS MISION Y VISION ===================== */
+
+.dark .mission-vision-section {
+    background-color: #333 !important;
+}
+
+.dark .mission-card,
+.dark .vision-card {
+    background: #2a2a2a !important;
+}
+
+/* ============== CSS VALORES SECTION ===================== */
+
+.dark .values-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .value-card {
+    background: #333 !important;
+}
+
+/* ============== CSS EQUIPO SECTION ===================== */
+
+.dark .team-section {
+    background-color: #333 !important;
+}
+
+.dark .team-card {
+    background: #2a2a2a !important;
+}
+
+.dark .team-info h3 {
+    color: white;
+}
+
+.dark .team-info p {
+    color: white;
+}
+
+.dark .social-icons a {
+    color: white;
+}
+
+.dark .social-icons a:hover {
+    color: #ffcccb;
+}
+
+/* ============== CSS TESTIMONIOS SECTION ===================== */
+
+.dark .testimonials-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .testimonial-card {
+    background: #333 !important;
+}
+
+.dark .testimonial-author h4 {
+    color: white;
+}
+
+.dark .testimonial-author p {
+    color: white;
+}
+
+.dark .testimonial-content i {
+    color: #ffcccb;
+}
+
+.dark .testimonial-author img {
+    border: 3px solid #ffcccb;
+}
+
+.dark .testimonial-author img:hover {
+    border: 3px solid #ffcccb;
+}
+
+/* ============== CSS CARRUSEL ===================== */
+
+.dark .proveedores-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .slider .slide img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP A LOS IMPUT */
+
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+    box-shadow: none !important;
+    border-color: transparen !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(192, 47, 47) !important;
+}
+
+/* FIN MODO DARK */
+/* -----------------------------------------------------------------------------*/
+/* CSS MAIN */
+.active {
+    border-bottom: 3px solid #dc3545 !important;
+}
+
+.navbar {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    position: fixed !important;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('../img/Nosotros.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Historia Section */
+.history-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.--gerente {
+    width: 400px;
+}
+
+.history-section h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.stats-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #dc3545;
+    display: inline-block;
+}
+
+.stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Misión y Visión Section */
+.mission-vision-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.mission-vision-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.mission-card,
+.vision-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-10px);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
+.mission-card p,
+.vision-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Valores Section */
+
+.values-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    height: 100%;
+    animation: flipInX 1s ease-in-out;
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+}
+
+/* Equipo Section */
+.team-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.team-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.team-info p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #666;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #dc3545;
+}
+
+/* Testimonios Section */
+.testimonials-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-content i {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid #dc3545;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.testimonial-author p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* CARRUSEL DE PROOVEDORES */
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    width: calc(120px * 18);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100px * 12));
+    }
+}
+
+/* FOOTER CSS */
+
+.text-reset {
+    /* Reset de color de texto */
+    text-decoration: none;
+}
